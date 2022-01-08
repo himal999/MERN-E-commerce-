@@ -6,7 +6,7 @@ const userRoutes = require('./routes/user');
 const app = express();
 
 //routes
-app.use(userRoutes);
+app.use("/",userRoutes);
 
 //db
 mongoose.connect(process.env.DATABASE,{
